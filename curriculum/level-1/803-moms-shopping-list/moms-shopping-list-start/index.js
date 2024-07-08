@@ -1,11 +1,11 @@
-const form = document.addItem;
+const form = document.getElementById("add-todo")
 const list = document.getElementById("list");
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const item = form.title.value;
-    form.title.value = "";
+    form.title.value = ""; 
 
     const li = document.createElement("li");  
 
