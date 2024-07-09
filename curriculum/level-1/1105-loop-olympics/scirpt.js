@@ -20,14 +20,14 @@
 
 //for (let i = 0; i <= 100; i++) {
 //    if (i % 2 == 0) {
-//        console.log(i)
+//        console.log(i);
 //    }
 //}
 
-//const fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
+//const fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"];
 
 //for (let i = 0 + 1; i <= fruit.length; i+= 2 ) {
-//    let otherFruit = []
-//    otherFruit.push(fruit[i])
-//    console.log(otherFruit)
-//}
+//    let otherFruit = [];
+//    otherFruit.push(fruit[i]);
+//    console.log(otherFruit);
+//};
