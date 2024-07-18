@@ -3,7 +3,7 @@ const headerTitle = document.getElementById("header");
 let input = document.getElementsByName("message")[0];
 let send = input.querySelector("button");
 headerTitle.innerText = "Will Elliott";
-headerTitle.style.color = "red";
+headerTitle.style.color = "red"; 
 
 function changeText() {
     const clearText = document.querySelectorAll("div.messages > div");
@@ -23,6 +23,10 @@ function sendText(value) {
     for (let i = 0; i < newText.length; i++) { 
         newText[i].innerText = value
     }
+}
+
+function changeTheme() {
+    
 }
 
 document.getElementById("clear-button").addEventListener('click', changeText)

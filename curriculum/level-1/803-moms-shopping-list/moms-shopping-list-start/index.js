@@ -28,7 +28,7 @@ form.addEventListener('submit', function (event) {
 
     li.appendChild(div);
     li.appendChild(newInput);
-    li.appendChild(editButton);
+    li.appendChild(editButton); 
     li.appendChild(deleteButton);
     li.appendChild(saveButton);
 
