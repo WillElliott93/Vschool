@@ -131,12 +131,11 @@ function combat(player, enemy) {
 
 function getRandomEnemy() {
     let randomIndex = Math.floor(Math.random() * 3);
-    switch (randomIndex) {
-        case 0:
-            return werewolf;
-        case 1:
-            return vampire;
-        case 2:
-            return zombie;
+    if (randomIndex === 0) {
+        return zombie;
+    } else if(randomIndex === 1) {
+        return vampire;
+    } else if(randomIndex === 2) {
+        return werewolf;
     }
 }
