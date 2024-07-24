@@ -28,7 +28,7 @@ class Player {
 
 const playerName = readline.question("Welcome adventurer to the lands of Barovia! Tell me, what is your name? ");
 const playerInventory = ["GreatSword", "Holy Symbol", "Health Potion", "Set of Armor"];
-const paladin = new Player(playerName, 50, playerInventory, 10, 16);
+const paladin = new Player(playerName, 70, playerInventory, 12, 16);
 const strahd = new Player("The Devil Strahd", 150, ["1,000,000 Gold", "Strahd's Sword"], 10, 18);
 const werewolf = new Player("Werewolf", 45, ["Potion", "Cloak of Protection"], 5, 14);
 const vampire = new Player("Vampire", 70, ["Potion", "Dark Blade"], 8, 16);
@@ -47,7 +47,7 @@ while (isGameRunning && paladin.isAlive()) {
 
         combat(paladin, strahd);
 
-        if (!strahd.isAlive()) {
+        if (strahd.isAlive() === false) {
             console.log(`Congratulations, ${playerName}! You have defeated Strahd and cleansed Barovia of his presence. You are victorious!`);
             isGameRunning = false;
         }
@@ -68,12 +68,12 @@ while (isGameRunning && paladin.isAlive()) {
         if (decision === "f") {
             combat(paladin, randomEnemy);
         } else if (decision === "r") {
-            let runChance = (Math.floor(Math.random() * 20))
+            let runChance = (Math.floor(Math.random() * 20));
             if(runChance >= 10) {
                 console.log(`You run away from ${randomEnemy.name}!`);
             } else if (runChance <= 10) {
-                console.log(`You attempt to run away but ${randomEnemy.name} stops you!`)
-                combat(paladin, randomEnemy)
+                console.log(`You attempt to run away but ${randomEnemy.name} stops you!`);
+                combat(paladin, randomEnemy);
             }   
         }
     } else if (action === "i") {
@@ -100,7 +100,7 @@ function combat(player, enemy) {
             console.log(`You missed ${enemy.name}!`);
         }
 
-        if (!enemy.isAlive()) {
+        if (enemy.isAlive() === false) {
             console.log(`${enemy.name} has been defeated! You gain 20 hitpoints and loot ${enemy.name}'s inventory.`);
             player.hitpoints += 20;
             player.inventory.push(...enemy.inventory);
@@ -110,7 +110,7 @@ function combat(player, enemy) {
         console.log(`${enemy.name}'s turn to attack!`);
         let enemyAttackRoll = enemy.attackRoll();
         if(enemyAttackRoll === 20) {
-            let damage = (Math.floor(Math.random() * 12) + enemy.attack) * 2;
+            let damage = (Math.floor(Math.random() * 8) + enemy.attack) * 2;
             player.takeDamage(damage)
             console.log(`Critical hit! The ${enemy.name} hit you for ${damage} damage!`)
         } else if (enemyAttackRoll >= player.ac) {
@@ -121,7 +121,7 @@ function combat(player, enemy) {
             console.log(`${enemy.name} missed you!`);
         }
 
-        if (!player.isAlive()) {
+        if (player.isAlive() === false) {
             console.log(`You have been defeated by ${enemy.name}. Game over!`);
             isGameRunning = false;
             return;
