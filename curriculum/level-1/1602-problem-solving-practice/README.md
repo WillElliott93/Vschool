@@ -4,7 +4,7 @@ Write a function that takes an array of numbers and returns the largest (without
 
 ```jsx
 // test data
-console.log(largest([6, 13, 250, 3)) // => 250
+console.log(largest([6, 13, 250, 3])) // => 250
 console.log(largest([3, 5, 2, 8, 1])) // => 8
 console.log(largest([-13, 40, 3, 0, 19, 22])) // => 40
 ```
@@ -15,7 +15,7 @@ Write a function that takes an array of words and a character and returns each w
 
 ```jsx
 // test data
-console.log(lettersWithStrings(["$hello!", "%%^%%", "test!"], "!") => // => ["$hello!", "test!"]
+console.log(lettersWithStrings(["$hello!", "%%^%%", "test!"]), "!") => // => ["$hello!", "test!"]
 console.log(lettersWithStrings(["#3", "$$$", "C%4!", "Hey!"], "!"))  // => ["C%4!", "Hey!"]
 console.log(lettersWithStrings(["yellow", "green", "^up^", "down", "dog"], "h"))  // => []
 ```
