@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="calculator-form">
+        <h1>Simple Calculator</h1>
+        <div class="operation" id="add-section">
+            <h2>Addition</h2>
+            <input type="number" id="add-num1" placeholder="First number" required>
+            <input type="number" id="add-num2" placeholder="Second number" required>
+            <button type="button" onclick="addition()">Add</button>
+            <p id="add-result"></p>
+        </div>
+        <div class="operation" id="subtract-section">
+            <h2>Subtraction</h2>
+            <input type="number" id="subtract-num1" placeholder="First number" required>
+            <input type="number" id="subtract-num2" placeholder="Second number" required>
+            <button type="button" onclick="subtraction()">Subtract</button>
+            <p id="subtract-result"></p>
+        </div>
+        <div class="operation" id="multiply-section">
+            <h2>Multiplication</h2>
+            <input type="number" id="multiply-num1" placeholder="First number" required>
+            <input type="number" id="multiply-num2" placeholder="Second number" required>
+            <button type="button" onclick="multiplication()">Multiply</button>
+            <p id="multiply-result"></p>
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

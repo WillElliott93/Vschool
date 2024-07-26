@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="myForm">
+        <div>
+            <h4>What is your name? Please include your first and last.</h4>
+            <input type="text" name="firstName" value="firstName" placeholder="First Name">
+            <input type="text" name="lastName" value="lastName" placeholder="Last Name">
+        </div>
+        <div>
+            <h4>How old are you?</h4>
+            <input type="number" name="age" value="number">
+        </div>
+        <div>    
+            <h4>What is your gender?</h4>
+            Male:<input type="radio" name="gender" value="male">
+            Female:<input type="radio" name="gender" value="female">
+        </div>
+        <div>
+        <h4>Where are you flying to?</h4>
+            <select name="city">
+                <option value="Miami">Miami</option>
+                <option value="Orlando">Orlando</option>
+                <option value="Jacksonville">Jacksonville</option>
+            </select>
+        </div>
+        <div>
+            <h4>Any dietary restrictions? Select all that apply:</h4>
+            Lactose free:<input type="checkbox" value="Lactose-free" name="diet">
+            Vegitarian:<input type="checkbox" value="Vegitarian" name="diet">
+            Peanut Allergy:<input type="checkbox" value="Peanut-Allergy" name="diet">
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
