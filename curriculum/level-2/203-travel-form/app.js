@@ -1,6 +1,6 @@
 const form = document.myForm
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', (event) => {
     event.preventDefault()
     const checkedInputs = []
     const name = form.firstName.value + " " + form.lastName.value

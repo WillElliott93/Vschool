@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #8d8d8d;
-    color: #333;
+    background-color: #cecece;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,6 +20,7 @@ h4 {
 #footer {
     display: flex;
     flex-direction: row;
+    color: black;
 }
 
 .baddieList {
