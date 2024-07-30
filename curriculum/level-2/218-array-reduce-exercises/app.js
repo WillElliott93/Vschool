@@ -1,15 +1,15 @@
 function total(arr) {
     return arr.reduce(function(final, num) {
-        return final += num
-    })
+        return final += num;
+    });
  }
  
  console.log(total([1,2,3])); // 6
 
  function stringConcat(arr) {
     return arr.reduce(function(final, num) {
-        return final + num
-    }, "")
+        return final + num;
+    }, "");
  }
  
  console.log(stringConcat([1,2,3])); // "123"
@@ -17,10 +17,10 @@ function total(arr) {
  function totalVotes(arr) {
     return arr.reduce(function(final, votes) {
         if(votes.voted === true) {
-            final++
+            final++;
         }
-        return final 
-    }, 0)
+        return final;
+    }, 0);
  }
  
  var voters = [
@@ -41,8 +41,8 @@ function total(arr) {
 
  function shoppingSpree(arr) {
     return arr.reduce(function(final, num) {
-        return final + num.price
-    }, 0)
+        return final + num.price;
+    }, 0);
  }
  
  var wishlist = [
@@ -57,9 +57,9 @@ function total(arr) {
 
  function flatten(arr) {
     return arr.reduce(function(final, curArr) {
-        final.push(...curArr)
-        return final
-    }, [])
+        final.push(...curArr);
+        return final;
+    }, []);
  }
  
  var arrays = [
