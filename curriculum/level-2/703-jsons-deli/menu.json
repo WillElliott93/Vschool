@@ -1,0 +1,66 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "name": "wings",
+                    "ingredients": ["chicken, buffalo sauce"],
+                    "description": "Chicken wings tossed in a buffalo sauce."
+                },
+                {
+                    "name": "Mozz Sticks",
+                    "ingredients": ["Mozz cheese, breaded crust"],
+                    "description": "Stringy mozz cheese sticks in a crispy crust."
+                }
+            ],
+            "coldSandwiches": [
+                {
+                    "name": "turkey and cheese",
+                    "ingredients": ["white bread, turkey, provolone cheese"],
+                    "description": "A cold turkey sandwich on white bread and provolone cheese."
+                },
+                {
+                    "name": "ham and cheese",
+                    "ingredients": ["White bread, american cheese, ham"],
+                    "description": "A cold ham and american cheese sandwich on white bread."
+                }
+            ],
+            "hotSandwiches": [
+                {
+                    "name": "grilled cheese",
+                    "ingredients": ["white bread, american cheese"],
+                    "description": "A gooey and very cheesey sandwich on white bread."
+                },
+                {
+                    "name": "meatball sub",
+                    "ingredients": ["White sub roll, meatballs, marinara sauce, mozz cheese"],
+                    "description": "4 meatballs covered in marinara sauce and topped with mozz cheese on a 6 inch white sub roll."
+                }
+            ],
+            "desserts": [
+                {
+                    "name": "brownie",
+                    "ingredients": ["brownie mix, milk, chocolate"],
+                    "description": "A chocolate brownie"
+                },
+                {
+                    "name": "ice cream",
+                    "ingredients": ["ice, milk, vanilla"],
+                    "description": "A scoop of vanilla ice cream"
+                }
+            ],
+            "drinks": [
+                {
+                    "name": "coffee",
+                    "ingredients": ["ground coffee beans, hot water"],
+                    "description": "A plain black coffee"
+                },
+                {
+                    "name": "coke",
+                    "ingredients": ["carbonated water, coke syrup, sugar"],
+                    "description": "A 12 fl ounce can of coke"
+                }
+            ]
+        }
+    ]
+}
