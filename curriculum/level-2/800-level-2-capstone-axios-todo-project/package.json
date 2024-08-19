@@ -1,9 +1,8 @@
 {
-  "name": "721-pokemon-list",
+  "name": "800-level-2-capstone-axios-todo-project",
   "version": "1.0.0",
-  "type": "module",
-  "description": "The following exercise should be completed in vanilla JavaScript.",
-  
+  "description": "Link to example app: https://level2capstone.netlify.app/",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

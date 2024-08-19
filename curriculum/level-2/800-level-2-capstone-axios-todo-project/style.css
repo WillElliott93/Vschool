@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+}
+
+footer {
+    background-color: #4682B4;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-images {
+    display: flex;
+    gap: 80px;
+}
+
+footer img {
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px; 
+    padding-bottom: 60px; 
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.forms-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#toDoForm {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1; 
+    box-sizing: border-box; 
+}
+
+#toDoTitle {
+    padding: 5px;
+    height: 40px;
+    width: 50%;
+    border: 1px solid black;
+    font-size: large;
+    margin-top: 5px;
+}
+
+#toDoPrice {
+    padding: 5px;
+    height: 40px;
+    width: 50%;
+    border: 1px solid black;
+    font-size: large;
+    margin-top: 5px;
+}
+
+#toDoDescription {
+    padding: 5px;
+    height: 40px;
+    width: 50%;
+    border: 1px solid black;
+    font-size: large;
+    margin-top: 5px;
+}
+
+#toDoImg {
+    padding: 5px;
+    height: 40px;
+    width: 75%;
+    border: 1px solid black;
+    font-size: large;
+    margin-top: 5px;
+}
+
+#toDoList {
+    background-color: rgb(79, 210, 210);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.todo-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.todo-card img {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-content h2,
+.card-content p {
+    margin-bottom: 10px;
+}
+
+.edit-form {
+    display: none;
+    margin-top: 15px;
+}
+
+.edit-form input {
+    display: block;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#submit-btn {
+    background-color: #51a7ed;
+    color: white;
+    border: 1px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #18476d;
+}
+
+.todo-card button {
+    background-color: #51a7ed;
+    color: white;
+    border: 1px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.todo-card button:hover {
+    background-color: #18476d;
+}
+
+#vschool-quote {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

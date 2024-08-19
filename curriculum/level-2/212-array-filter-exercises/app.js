@@ -66,3 +66,15 @@ function evensOnly(arr) {
   // =>
   //[ { name: 'Angelina Jolie', age: 80 },
   //  { name: 'Bob Ziroll', age: 100 } ]
+
+  const arr1 = [ 1, 3, 5 ]
+  const arr2= [ 2, 4, 6 ]
+  const arr3 = [ ]
+
+//function arrCombine(arr1, arr2) {
+ //   let arr4 = []
+
+//}
+
+arr3.push(...arr1, ...arr2)
+console.log(arr3)
