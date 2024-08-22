@@ -1,0 +1,28 @@
+.friend-list {
+  padding: 20px;
+}
+
+.friend {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.friend h2 {
+  margin-top: 0;
+}
+
+.pets {
+  margin-top: 10px;
+}
+
+.pet {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pet:last-child {
+  border-bottom: none;
+}
