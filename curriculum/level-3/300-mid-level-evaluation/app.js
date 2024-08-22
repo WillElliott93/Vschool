@@ -26,7 +26,7 @@ function countVowels(str) {
     return count;
 }
 
-const input = 'aaa iii ooo uuu';
+const input = 'aaa eee www xxx qqq iii ooo uuu';
 
 console.log(countVowels(input)); // Output: 3
 
